@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+body{
+
+	
+	background: linear-gradient(to left, #4776E6, #8e54e9);
+	background-repeat: no-repeat;
+	padding: 20px;
+	font-family: 'Poppins', sans-serif;
+	height: 800px;
+
+
+}
+
+.menu a{
+	text-decoration: none;
+	color: black;
+	margin-right: 15px;
+
+
+}
+
+header{
+	position: relative;
+	text-align: center;
+
+}
+
+.tabela{
+	width: 100%;
+	border: 3px;
+
+	
+	
+
+}
+
+ td{
+	text-align: center;
+	border: 1px; 
+	border-style: double;
+	border-color: white;
+
+
+	padding: 15px;
+
+}
+
+th{
+	border: 2px;
+	border-style: double;
+	padding: 15px;
+	border-color: white;
+}
+
+tr:nth-child(even){
+	background-color: ;
+}
+tr:nth-child(odd){
+	background-color: white;
+	opacity: 0.5;
+}
+

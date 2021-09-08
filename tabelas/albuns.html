@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Albuns</title>
+	<meta chaset= "utf-8">
+	<meta name="viewport" content="width=device-widht, initial- scale= 1.0">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+
+
+</head>
+<body>
+
+	<header>
+		<div class="menu">
+
+                
+                <a href="index.html">Início</a>
+				<a href="postagem.html">Postagem</a>
+				<a href="albuns.html">Albuns</a>
+				<a href="todos.html">TO-DOs</a>
+		</div>
+
+	</header>
+
+<table class="tabela"> 
+
+		<br><br>
+		<tr>
+			<th colspan="4">ALBUNS</th>		
+		</tr>
+		<tr>
+
+			<th>Albuns</th>
+			<th>Photos</th>
+				
+		</tr>
+		<tr>
+			<td id="titulo"></td>
+			<script type="">
+			fetch('https://jsonplaceholder.typicode.com/albums/1')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("titulo");
+            	td.innerText = JSON.stringify(json.title);
+            })
+            </script>
+
+            <td id="photos"></td>
+            <script type="">
+			fetch('https://jsonplaceholder.typicode.com/photos/1')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("photos");
+            	td.innerText = JSON.stringify(json.thumbnailUrl) ;
+            })
+            </script>
+        </tr>
+
+           <!-- 2-->
+        <tr>
+
+           <td id="titulo2"></td>
+			<script type="">
+			fetch('https://jsonplaceholder.typicode.com/albums/2')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("titulo2");
+            	td.innerText = JSON.stringify(json.title);
+            })
+            </script>
+
+            <td id="photos2"></td>
+            <script type="">
+			fetch('https://jsonplaceholder.typicode.com/photos/2')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("photos2");
+            	td.innerText = JSON.stringify(json.thumbnailUrl) ;
+            })
+            </script>
+        </tr>
+			
+			<!-- 3 -->
+	    <tr>
+
+			<td id="title3"></td>
+			<script type="">
+			fetch('https://jsonplaceholder.typicode.com/albums/3')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("title3");
+            	td.innerText = JSON.stringify(json.title);
+            })
+            </script>
+
+            <td id="photos3"></td>
+            <script type="">
+			fetch('https://jsonplaceholder.typicode.com/photos/3')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("photos3");
+            	td.innerText = JSON.stringify(json.thumbnailUrl) ;
+            })
+            </script>
+        </tr>
+			 
+			 <!-- 4 -->
+		<tr>
+
+			<td id="title4"></td>
+			<script type="">
+			fetch('https://jsonplaceholder.typicode.com/albums/4')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("title4");
+            	td.innerText = JSON.stringify(json.title);
+            })
+            </script>
+
+            <td id="photos4"></td>
+            <script type="">
+			fetch('https://jsonplaceholder.typicode.com/photos/4')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("photos4");
+            	td.innerText = JSON.stringify(json.thumbnailUrl) ;
+            })
+            </script>
+        </tr>
+			
+			<!-- 5-->
+		<tr>
+
+			<td id="title5"></td>
+			<script type="">
+			fetch('https://jsonplaceholder.typicode.com/albums/5')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("title5");
+            	td.innerText = JSON.stringify(json.title);
+            })
+            </script>
+
+            <td id="photos5"></td>
+            <script type="">
+			fetch('https://jsonplaceholder.typicode.com/photos/5')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("photos5");
+            	td.innerText = JSON.stringify(json.thumbnailUrl) ;
+            })
+            </script>
+        </tr>
+			
+			
+		</tr>
+		
+	</table>
+
+
+
+
+
+
+</body>

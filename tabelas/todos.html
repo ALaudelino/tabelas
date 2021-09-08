@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TO-DOs</title>
+	<meta chaset= "utf-8">
+	<meta name="viewport" content="width=device-widht, initial- scale= 1.0">
+	<link rel="stylesheet" type="text/css" href="style3.css">
+
+
+</head>
+<body>
+
+	<header>
+		<div class="menu">
+                
+                <a href="index.html">Início</a>
+				<a href="postagem.html">Postagem</a>
+				<a href="albuns.html">Albuns</a>
+				<a href="todos.html">TO-DOs</a>
+		</div>
+
+	</header>
+
+	<table class="tabela"> 
+
+		<br><br>
+		<tr>
+			<th colspan="4">TO-DOs</th>		
+		</tr>
+		<tr>
+
+			<th>TO-DOs</th>
+			<th>Site</th>
+				
+		</tr>
+		<tr>
+			<td id="todos"></td>
+			<script type="">
+			fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("todos");
+            	td.innerText = JSON.stringify(json.title);
+            })
+            </script>
+
+            <td id="site"></td>
+            <script type="">
+			fetch('https://jsonplaceholder.typicode.com/users/1')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("site");
+            	td.innerText = JSON.stringify(json.website) ;
+            })
+            </script>
+        </tr>
+
+           <!-- 2-->
+        <tr>
+
+           <td id="todos2"></td>
+			<script type="">
+			fetch('https://jsonplaceholder.typicode.com/todos/2')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("todos2");
+            	td.innerText = JSON.stringify(json.title);
+            })
+            </script>
+
+            <td id="site2"></td>
+            <script type="">
+			fetch('https://jsonplaceholder.typicode.com/comments/2')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("site2");
+            	td.innerText = JSON.stringify(json.website) ;
+            })
+            </script>
+        </tr>
+			
+			<!-- 3 -->
+	    <tr>
+
+			<td id="todos3"></td>
+			<script type="">
+			fetch('https://jsonplaceholder.typicode.com/todos/3')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("todos3");
+            	td.innerText = JSON.stringify(json.title);
+            })
+            </script>
+
+            <td id="site3"></td>
+            <script type="">
+			fetch('https://jsonplaceholder.typicode.com/users/3')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("site3");
+            	td.innerText = JSON.stringify(json.website) ;
+            })
+            </script>
+        </tr>
+			 
+			 <!-- 4 -->
+		<tr>
+
+			<td id="todos4"></td>
+			<script type="">
+			fetch('https://jsonplaceholder.typicode.com/todos/4')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("todos4");
+            	td.innerText = JSON.stringify(json.title);
+            })
+            </script>
+
+            <td id="site4"></td>
+            <script type="">
+			fetch('https://jsonplaceholder.typicode.com/users/4')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("site4");
+            	td.innerText = JSON.stringify(json.website) ;
+            })
+            </script>
+        </tr>
+			
+			<!-- 5-->
+		<tr>
+
+			<td id="todos5"></td>
+			<script type="">
+			fetch('https://jsonplaceholder.typicode.com/todos/5')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("todos5");
+            	td.innerText = JSON.stringify(json.title);
+            })
+            </script>
+
+            <td id="site5"></td>
+            <script type="">
+			fetch('https://jsonplaceholder.typicode.com/users/5')
+            .then(response => response.json())
+            .then(json =>{
+            	const td = document.getElementById("site5");
+            	td.innerText = JSON.stringify(json.website) ;
+            })
+            </script>
+        </tr>
+			
+			
+		</tr>
+		
+	</table>
+
+
+
+
+
+
+
+</body>
